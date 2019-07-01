@@ -1,0 +1,291 @@
+{% load staticfiles %}
+
+<!doctype html>
+<html ⚡="">
+
+<head>
+  <meta charset="utf-8">
+  <title>The Cat Project</title>
+  <link rel="canonical" href="https://www.ampstart.com/templates/gallery.amp">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <meta name="amp-google-client-id-api" content="googleanalytics">
+
+  <script async="" src="https://cdn.ampproject.org/v0.js"></script>
+
+  <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
+  <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+  <link rel="canonical" href="https://amp.dev/documentation/examples/components/amp-lightbox/index.html">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+  <style amp-boilerplate="">
+    body {
+      -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      animation: -amp-start 8s steps(1, end) 0s 1 normal both
+    }
+
+    @-webkit-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-moz-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-ms-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-o-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+  </style>
+  <noscript>
+    <style amp-boilerplate="">
+      body {
+        -webkit-animation: none;
+        -moz-animation: none;
+        -ms-animation: none;
+        animation: none
+      }
+    </style>
+  </noscript>
+
+
+  <script custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js" async=""></script>
+
+
+  <link href="{% static '\css\gallery.css' %}" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+  <script type="text/javascript"> window.CSRF_TOKEN = "{{ csrf_token }}"; </script>
+
+  <script src="{% static '\js\script.js' %}"></script>
+
+</head>
+
+<body>
+  <amp-lightbox id="my-lightbox" class="hide">
+    <div class="lightbox" on="tap:my-lightbox.close" role="button" tabindex="0" id="">
+      <button class="close-button" onclick="">✖</button>
+      <div>
+        <h3 id="lbname"></h3>
+        <h4 id="lbdesc"></h4>
+
+      </div>
+      <div class="btns">
+        <button class="button btn-img">Save Image Link</button>
+        <button class="button btn-desc">Save Breed Description</button>
+        <h5 id="saved-to-db"></h5>
+      </div>
+    </div>
+
+  </amp-lightbox>
+
+  <main id="content" class="gallery-base-content fit" role="main">
+    <h1
+      class="gallery-landing-title flex justify-center items-center center absolute top-0 left-0 right-0 z1 mx-auto gallery-base-invert">
+      Gallery of Cats
+    </h1>
+    <amp-carousel width="100vw" height="100vh" controls="" class="gallery-landing-wall block relative">
+      <div class="gallery-landing-wall-scroll relative">
+
+        <figure class="gallery-landing-image-wrapped gallery-landing-image-wrap" id="tvan">
+          <figcaption
+            class="gallery-landing-image-caption gallery-landing-image-caption-bottom gallery-landing-image-caption-extraleft  gallery-landing-image-caption-content">
+            <h2 class="h4 regular"></h2>
+          </figcaption>
+          <div class="gallery-landing-image-transform">
+            <amp-img width="1" height="1" layout="responsive" noloading=""
+              src="https://cdn2.thecatapi.com/images/MtgMsxPw9.jpg" alt="cat"></amp-img>
+          </div>
+        </figure>
+        <figure class="gallery-landing-image-wrapped gallery-landing-image-wrap" id="awir">
+          <figcaption
+            class="gallery-landing-image-caption gallery-landing-image-caption-bottom  gallery-landing-image-caption-content">
+            <h2 class="h4 regular"></h2>
+          </figcaption>
+          <div class="gallery-landing-image-transform">
+            <amp-img width="1" height="1" layout="responsive" noloading="" src="" alt="cat"></amp-img>
+          </div>
+        </figure>
+        <figure class="gallery-landing-image-wrapped gallery-landing-image-wrap" id="amis">
+          <figcaption
+            class="gallery-landing-image-caption gallery-landing-image-caption-right gallery-landing-image-caption-bottom  gallery-landing-image-caption-content">
+            <h2 class="h4 regular"></h2>
+          </figcaption>
+          <div class="gallery-landing-image-transform">
+            <amp-img width="1" height="1" layout="responsive" noloading="" src="" alt="cat"></amp-img>
+          </div>
+        </figure>
+        <figure class="gallery-landing-image-wrapped gallery-landing-image-wrap" id="toyg">
+          <figcaption
+            class="gallery-landing-image-caption gallery-landing-image-caption-bottom  gallery-landing-image-caption-content">
+            <h2 class="h4 regular"></h2>
+          </figcaption>
+          <div class="gallery-landing-image-transform">
+            <amp-img width="1" height="1" layout="responsive" noloading="" src="" alt="cat"></amp-img>
+          </div>
+        </figure>
+        <figure class="gallery-landing-image-wrapped gallery-landing-image-wrap" id="beng">
+          <figcaption class="gallery-landing-image-caption  gallery-landing-image-caption-content">
+            <h2 class="h4 regular"></h2>
+          </figcaption>
+          <div class="gallery-landing-image-transform">
+            <amp-img width="1" height="1" layout="responsive" noloading="" src="" alt="cat"></amp-img>
+          </div>
+        </figure>
+        <figure class="gallery-landing-image-wrapped gallery-landing-image-wrap" id="bure">
+          <figcaption
+            class="gallery-landing-image-caption gallery-landing-image-caption-extraleft  gallery-landing-image-caption-content">
+            <h2 class="h4 regular"></h2>
+          </figcaption>
+          <div class="gallery-landing-image-transform">
+            <amp-img width="1" height="1" layout="responsive" noloading="" src="" alt="cat"></amp-img>
+          </div>
+        </figure>
+        <figure class="gallery-landing-image-wrapped gallery-landing-image-wrap" id="chau">
+          <figcaption class="gallery-landing-image-caption  gallery-landing-image-caption-content">
+            <h2 class="h4 regular"></h2>
+          </figcaption>
+          <div class="gallery-landing-image-transform">
+            <amp-img width="1" height="1" layout="responsive" noloading="" src="" alt="cat"></amp-img>
+          </div>
+        </figure>
+        <figure class="gallery-landing-image-wrapped gallery-landing-image-wrap" id="chee">
+          <figcaption class="gallery-landing-image-caption  gallery-landing-image-caption-content">
+            <h2 class="h4 regular"></h2>
+          </figcaption>
+          <div class="gallery-landing-image-transform">
+            <amp-img width="1" height="1" layout="responsive" noloading="" src="" alt="cat"></amp-img>
+          </div>
+        </figure>
+        <figure class="gallery-landing-image-wrapped gallery-landing-image-wrap" id="csho">
+          <figcaption
+            class="gallery-landing-image-caption gallery-landing-image-caption-bottom  gallery-landing-image-caption-content">
+            <h2 class="h4 regular"></h2>
+          </figcaption>
+          <div class="gallery-landing-image-transform">
+            <amp-img width="1" height="1" layout="responsive" noloading="" src="" alt="cat"></amp-img>
+          </div>
+        </figure>
+        <figure class="gallery-landing-image-wrapped gallery-landing-image-wrap" id="rblu">
+          <figcaption
+            class="gallery-landing-image-caption gallery-landing-image-caption-bottom gallery-landing-image-caption-right  gallery-landing-image-caption-content">
+            <h2 class="h4 regular"></h2>
+          </figcaption>
+          <div class="gallery-landing-image-transform">
+            <amp-img width="1" height="1" layout="responsive" noloading="" src="" alt="cat"></amp-img>
+          </div>
+        </figure>
+        <figure class="gallery-landing-image-wrapped gallery-landing-image-wrap" id="lihu">
+          <figcaption
+            class="gallery-landing-image-caption gallery-landing-image-caption-bottom  gallery-landing-image-caption-content">
+            <h2 class="h4 regular"></h2>
+          </figcaption>
+          <div class="gallery-landing-image-transform">
+            <amp-img width="1" height="1" layout="responsive" noloading="" src="" alt="cat"></amp-img>
+          </div>
+        </figure>
+        <figure class="gallery-landing-image-wrapped gallery-landing-image-wrap" id="hima">
+          <figcaption class="gallery-landing-image-caption  gallery-landing-image-caption-content">
+            <h2 class="h4 regular"></h2>
+          </figcaption>
+          <div class="gallery-landing-image-transform">
+            <amp-img width="1" height="1" layout="responsive" noloading="" src="" alt="cat"></amp-img>
+          </div>
+        </figure>
+        <figure class="gallery-landing-image-wrapped gallery-landing-image-wrap" id="ocic">
+          <figcaption
+            class="gallery-landing-image-caption gallery-landing-image-caption-bottom gallery-landing-image-caption-extraleft  gallery-landing-image-caption-content">
+            <h2 class="h4 regular"></h2>
+          </figcaption>
+          <div class="gallery-landing-image-transform">
+            <amp-img width="1" height="1" layout="responsive" noloading="" src="" alt="cat"></amp-img>
+          </div>
+        </figure>
+        <figure class="gallery-landing-image-wrapped gallery-landing-image-wrap" id="mcoo">
+          <figcaption
+            class="gallery-landing-image-caption gallery-landing-image-caption-bottom gallery-landing-image-caption-right  gallery-landing-image-caption-content">
+            <h2 class="h4 regular"></h2>
+          </figcaption>
+          <div class="gallery-landing-image-transform">
+            <amp-img width="1" height="1" layout="responsive" noloading="" src="" alt="cat"></amp-img>
+          </div>
+        </figure>
+        <figure class="gallery-landing-image-wrapped gallery-landing-image-wrap" id="norw">
+          <figcaption class="gallery-landing-image-caption  gallery-landing-image-caption-content">
+            <h2 class="h4 regular"></h2>
+          </figcaption>
+          <div class="gallery-landing-image-transform">
+            <amp-img width="1" height="1" layout="responsive" noloading="" src="" alt="cat"></amp-img>
+          </div>
+        </figure>
+        <figure class="gallery-landing-image-wrapped gallery-landing-image-wrap" id="ragd">
+          <figcaption class="gallery-landing-image-caption  gallery-landing-image-caption-content">
+            <h2 class="h4 regular"></h2>
+          </figcaption>
+          <div class="gallery-landing-image-transform">
+            <amp-img width="1" height="1" layout="responsive" noloading="" src="" alt="cat"></amp-img>
+          </div>
+        </figure>
+        <figure class="gallery-landing-image-wrapped gallery-landing-image-wrap" id="sibe">
+          <figcaption
+            class="gallery-landing-image-caption gallery-landing-image-caption-bottom gallery-landing-image-caption-right  gallery-landing-image-caption-content">
+            <h2 class="h4 regular"></h2>
+          </figcaption>
+          <div class="gallery-landing-image-transform">
+            <amp-img width="1" height="1" layout="responsive" noloading="" src="" alt="cat"></amp-img>
+          </div>
+        </figure>
+        <figure class="gallery-landing-image-wrapped gallery-landing-image-wrap" id="snow">
+          <figcaption
+            class="gallery-landing-image-caption gallery-landing-image-caption-bottom gallery-landing-image-caption-extraleft  gallery-landing-image-caption-content">
+            <h2 class="h4 regular"></h2>
+          </figcaption>
+          <div class="gallery-landing-image-transform">
+            <amp-img width="1" height="1" layout="responsive" noloading="" src="" alt="cat"></amp-img>
+          </div>
+        </figure>
+      </div>
+    </amp-carousel>
+  </main>
+</body>
+
+</html>
