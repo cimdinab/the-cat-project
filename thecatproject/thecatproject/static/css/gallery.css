@@ -2125,9 +2125,9 @@ figure {
 
 .gallery-landing-image-wrap:nth-child(3) {
   animation-delay: -1s;
-  width: 40vh;
-  top: 40vh;
-  left: 0vh
+  width: 33vh;
+  top: 37vh;
+  left: 2vh
 }
 
 .gallery-landing-image-wrap:nth-child(3) .gallery-landing-image-transform {
@@ -2139,7 +2139,7 @@ figure {
 .gallery-landing-image-wrap:nth-child(4) {
   animation-delay: -3s;
   width: 34vh;
-  top: 30vh;
+  top: 37vh;
   left: 57vh
 }
 
@@ -2151,8 +2151,8 @@ figure {
 
 .gallery-landing-image-wrap:nth-child(5) {
   animation-delay: -2s;
-  width: 23vh;
-  top: 75vh;
+  width: 33vh;
+  top: 70vh;
   left: 5vh
 }
 
@@ -2229,8 +2229,8 @@ figure {
 
 .gallery-landing-image-wrap:nth-child(11) {
   animation-delay: -6s;
-  width: 30vh;
-  top: 64vh;
+  width: 40vh;
+  top: 61vh;
   left: 95vh
 }
 
